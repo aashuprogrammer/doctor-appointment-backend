@@ -38,7 +38,7 @@ func main() {
 	app := fiber.New()
 
 	app.Get("/", func(c *fiber.Ctx) error {
-		return c.SendString("Hello ")
+		return c.SendString("Hello Users ")
 	})
 	// //////////////  User Create //////////////
 	app.Post("/user/create", users.CreateUser(store))
