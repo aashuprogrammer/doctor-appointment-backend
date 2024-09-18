@@ -59,7 +59,7 @@ type LoginResponse struct {
 	AccessTokenExpireAt time.Time `json:"access_token_expireAt"`
 }
 
-////////  Users Create ////////////////////
+////////  Users login ////////////////////
 
 func UserLogin(a pgdb.Store, config utils.Config, token token.Maker) func(c *fiber.Ctx) error {
 	return func(c *fiber.Ctx) error {
